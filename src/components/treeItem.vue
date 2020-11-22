@@ -4,10 +4,8 @@
     <div >
       {{ item.name }}
 
-      <input v-model="item.size" :placeholder="item.size">
-<!--      {{ item.size }}-->
+      <input v-if="item.children === undefined" v-model="item.size" :placeholder="item.size">
 
-      <!--      TODO: make show this only if there are children.-->
       <span @click="toggle" v-if="item.children !== undefined">[{{ isOpen ? '-' : '+' }}]</span>
     </div>
     <ul v-show="isOpen">
