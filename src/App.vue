@@ -47,6 +47,8 @@
       <br><br>
       Beim 2. Teil der Aufgabe habe ich probiert einen interaktiven Graph in D3.js umzusetzen. Mir fehlen aber die
       Kenntnisse um das in 2 Stunden in D3 machen zu können. Ich habe experimentiert aber habe da nichts zu zeigen.
+      <br><br>
+      Der Code befindet sich <a href="https://github.com/miandovka/miandovka.github.io">hier</a>.
     </p>
   </div>
 </template>
@@ -80,7 +82,15 @@ export default {
               {"name": "file1", "size": 50},
               {"name": "file2", "size": 100},
               {"name": "file3", "size": 5},
-              {"name": "file4", "size": 45}
+              {"name": "file4", "size": 45},
+              {
+                "name": "Projects",
+                "children": [
+                  {"name": "file1", "size": 300},
+                  {"name": "file2", "size": 20},
+                  {"name": "file3", "size": 5},
+                ]
+              },
             ]
           },
           {
